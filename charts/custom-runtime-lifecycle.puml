@@ -1,0 +1,36 @@
+@startuml
+
+hide footbox
+
+box "AWS Environment" #White
+participant "Lambda Environment" as aws #LightYellow
+participant "Runtime API" as api #LightYellow
+end box
+box "Customer code"
+participant "Bootstrap" as bootstrap #LightBlue
+participant "Custom Runtime" as runtime #LightBlue
+end box
+
+aws --> api : Environment starts API server
+activate api
+aws --> bootstrap : Environment invokes bootstrap
+activate bootstrap
+bootstrap --> runtime : Bootstrap starts the runtime
+deactivate bootstrap
+activate runtime
+
+aws --> api : Environment publishes events\nthrough the REST API
+
+group Execution loop [ Repeats until runtime is destroyed ]
+
+    api <- runtime : Runtime queries API for next event\nHTTP GET
+    activate runtime
+    ...
+    api <- runtime: Runtime notifies of processing result\nHTTP POST
+    deactivate runtime
+
+end
+
+destroy runtime
+
+@enduml

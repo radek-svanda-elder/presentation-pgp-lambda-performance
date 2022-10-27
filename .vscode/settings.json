@@ -1,0 +1,9 @@
+{
+    "plantuml.exportOutDir": ".",
+    "plantuml.exportSubFolder": false,
+    "plantuml.exportFormat": "svg",
+    "cSpell.words": [
+        "marp",
+        "Radek"
+    ]
+}
