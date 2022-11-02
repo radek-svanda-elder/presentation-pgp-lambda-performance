@@ -1,0 +1,77 @@
+2022-10-21T15:33:17.850+02:00
+REPORT RequestId: 0d02b5d8-ac7e-5f7f-8e60-ee140da79631 Duration: 4604.65 ms Billed Duration: 4605 ms Memory Size: 512 MB Max Memory Used: 200 MB Init Duration: 2106.86 ms
+2
+2022-10-21T15:33:17.129+02:00
+REPORT RequestId: fe13e574-6551-523a-8b4c-beb8c4894a0e Duration: 4488.89 ms Billed Duration: 4489 ms Memory Size: 512 MB Max Memory Used: 198 MB Init Duration: 2030.11 ms
+3
+2022-10-21T15:33:16.865+02:00
+REPORT RequestId: a877a4b4-ed6c-5142-8c7c-ff784cba7415 Duration: 4547.06 ms Billed Duration: 4548 ms Memory Size: 512 MB Max Memory Used: 198 MB Init Duration: 2055.50 ms
+4
+2022-10-21T15:33:13.005+02:00
+REPORT RequestId: 9f3e59f3-c98e-53e0-8260-023f685c0b72 Duration: 4396.64 ms Billed Duration: 4397 ms Memory Size: 512 MB Max Memory Used: 198 MB Init Duration: 2030.58 ms
+5
+2022-10-21T15:33:11.110+02:00
+REPORT RequestId: 4a7b6425-28b1-511b-b46a-3fe98963c969 Duration: 4710.36 ms Billed Duration: 4711 ms Memory Size: 512 MB Max Memory Used: 199 MB Init Duration: 2165.51 ms
+6
+2022-10-21T15:33:09.911+02:00
+REPORT RequestId: 187a5a61-d252-5794-ba05-01ad739d2485 Duration: 4452.56 ms Billed Duration: 4453 ms Memory Size: 512 MB Max Memory Used: 198 MB Init Duration: 2000.02 ms
+7
+2022-10-21T15:33:09.476+02:00
+REPORT RequestId: f816c1ec-95cd-553b-b7e7-9a2034020097 Duration: 4473.85 ms Billed Duration: 4474 ms Memory Size: 512 MB Max Memory Used: 199 MB Init Duration: 2065.63 ms
+8
+2022-10-21T15:33:07.857+02:00
+REPORT RequestId: 8ae11107-15de-5bc9-839f-4acbb410521a Duration: 4885.72 ms Billed Duration: 4886 ms Memory Size: 512 MB Max Memory Used: 199 MB Init Duration: 2065.87 ms XRAY TraceId: 1-63529f8e-3bac34b1228d99352ad9397c SegmentId: 503e95e32a52f760 Sampled: true
+9
+2022-10-21T15:33:07.674+02:00
+REPORT RequestId: 3c58a4d4-29de-50ed-a1bb-ff188813b39c Duration: 4607.54 ms Billed Duration: 4608 ms Memory Size: 512 MB Max Memory Used: 199 MB Init Duration: 2183.91 ms
+10
+2022-10-21T15:33:04.303+02:00
+REPORT RequestId: d2639820-2c89-56ef-a155-c3ec8d40005e Duration: 4580.47 ms Billed Duration: 4581 ms Memory Size: 512 MB Max Memory Used: 198 MB Init Duration: 2033.31 ms
+11
+2022-10-21T15:33:03.680+02:00
+REPORT RequestId: a1531f2f-0561-531f-b43a-44e3a4a9fbab Duration: 4708.76 ms Billed Duration: 4709 ms Memory Size: 512 MB Max Memory Used: 198 MB Init Duration: 2064.99 ms XRAY TraceId: 1-63529f88-54e0e26f3261ae9a360c4b97 SegmentId: 6a3f34477279bc5e Sampled: true
+12
+2022-10-21T15:32:59.730+02:00
+REPORT RequestId: 92d9be48-f58a-56c7-955e-e584544e6c1f Duration: 4516.54 ms Billed Duration: 4517 ms Memory Size: 512 MB Max Memory Used: 198 MB Init Duration: 2047.54 ms
+13
+2022-10-21T15:32:59.439+02:00
+REPORT RequestId: 479eb6f2-a417-587e-a7cc-ed3e05d272a6 Duration: 4438.37 ms Billed Duration: 4439 ms Memory Size: 512 MB Max Memory Used: 198 MB Init Duration: 2021.39 ms
+14
+2022-10-21T15:32:57.856+02:00
+REPORT RequestId: fbb94f5b-012f-5320-be5e-1497a0ed18f8 Duration: 4950.93 ms Billed Duration: 4951 ms Memory Size: 512 MB Max Memory Used: 200 MB Init Duration: 2120.42 ms XRAY TraceId: 1-63529f82-387f7cff77f6a63544c1b841 SegmentId: 1043308528331440 Sampled: true
+15
+2022-10-21T15:32:57.565+02:00
+REPORT RequestId: 7f8d7842-a17a-5e5f-a9b3-238e00b8a587 Duration: 4913.21 ms Billed Duration: 4914 ms Memory Size: 512 MB Max Memory Used: 200 MB Init Duration: 2091.46 ms XRAY TraceId: 1-63529f82-0496d7874ed2398d496df4e3 SegmentId: 205abb9d6a075bd5 Sampled: true
+16
+2022-10-21T15:32:55.414+02:00
+REPORT RequestId: 8bf2e088-994a-5da7-91d8-bb44388a446b Duration: 4469.90 ms Billed Duration: 4470 ms Memory Size: 512 MB Max Memory Used: 197 MB Init Duration: 2055.15 ms
+17
+2022-10-21T15:32:54.748+02:00
+REPORT RequestId: b5698e83-c17e-5357-a1db-d54f60c1ca9b Duration: 4859.77 ms Billed Duration: 4860 ms Memory Size: 512 MB Max Memory Used: 201 MB Init Duration: 2392.72 ms XRAY TraceId: 1-63529f7f-029da9eb081c2da03e1013ed SegmentId: 6dffa02e304a0a0f Sampled: true
+18
+2022-10-21T15:32:49.680+02:00
+REPORT RequestId: 005cb0a6-ecf9-58ea-8363-eb6a4d43801a Duration: 4925.19 ms Billed Duration: 4926 ms Memory Size: 512 MB Max Memory Used: 200 MB Init Duration: 2063.02 ms XRAY TraceId: 1-63529f7a-7f1f818b4532b3ff1e000712 SegmentId: 7e6ed3ef7e40c594 Sampled: true
+19
+2022-10-21T15:32:49.417+02:00
+REPORT RequestId: 50d52e0b-28fd-5df4-b1e6-75c78947c504 Duration: 4721.55 ms Billed Duration: 4722 ms Memory Size: 512 MB Max Memory Used: 199 MB Init Duration: 2040.89 ms XRAY TraceId: 1-63529f7a-0829020a66bd49c265927f88 SegmentId: 6a0eff2a20ba2da0 Sampled: true
+20
+2022-10-21T15:32:49.167+02:00
+REPORT RequestId: d1d5fc0c-7ed1-5e22-9372-a7c0df69eeb6 Duration: 5952.46 ms Billed Duration: 5953 ms Memory Size: 512 MB Max Memory Used: 201 MB Init Duration: 2201.80 ms XRAY TraceId: 1-63529f78-67deb23f3b156f7e77063d50 SegmentId: 0c621e0a28987f00 Sampled: true
+21
+2022-10-21T15:32:48.004+02:00
+REPORT RequestId: 10028109-19ce-52db-b12f-dac5b8779be8 Duration: 4970.14 ms Billed Duration: 4971 ms Memory Size: 512 MB Max Memory Used: 198 MB Init Duration: 2044.42 ms XRAY TraceId: 1-63529f79-179c664533deb69a0cd8a532 SegmentId: 03aa5ff224312321 Sampled: true
+22
+2022-10-21T15:32:40.162+02:00
+REPORT RequestId: a0ace771-d97f-5238-8e03-bcbd78cc75d3 Duration: 4939.12 ms Billed Duration: 4940 ms Memory Size: 512 MB Max Memory Used: 200 MB Init Duration: 2082.24 ms XRAY TraceId: 1-63529f73-29ad3b8b20b74bd033bacd53 SegmentId: 277b206c458cf122 Sampled: true
+23
+2022-10-21T15:32:37.924+02:00
+REPORT RequestId: b06411a5-50a8-5755-b5a3-4a69f10650be Duration: 5170.39 ms Billed Duration: 5171 ms Memory Size: 512 MB Max Memory Used: 199 MB Init Duration: 2083.51 ms XRAY TraceId: 1-63529f6e-1aab772c5c7274473fb301f6 SegmentId: 1075e315486e0c7d Sampled: true
+24
+2022-10-21T15:32:37.790+02:00
+REPORT RequestId: 72e205cd-66d6-5277-894e-5e01c771b91a Duration: 5175.34 ms Billed Duration: 5176 ms Memory Size: 512 MB Max Memory Used: 201 MB Init Duration: 2171.86 ms XRAY TraceId: 1-63529f6e-27fa3fcf487d580e25f5fe39 SegmentId: 76b4fbfa0cd5bd45 Sampled: true
+25
+2022-10-21T15:32:37.684+02:00
+REPORT RequestId: 774816b9-4b31-59d5-afd3-4d75ea9f9e3e Duration: 5016.18 ms Billed Duration: 5017 ms Memory Size: 512 MB Max Memory Used: 199 MB Init Duration: 2047.70 ms XRAY TraceId: 1-63529f6e-584d55314d3850dd662120dc SegmentId: 741b68281f6a41d7 Sampled: true
+26
+2022-10-21T15:32:36.696+02:00
+REPORT RequestId: f7c253c4-cab1-5e24-bbca-08086b1b7717 Duration: 4995.83 ms Billed Duration: 4996 ms Memory Size: 512 MB Max Memory Used: 200 MB Init Duration: 2006.83 ms XRAY TraceId: 1-63529f6d-3a46ceba54ce493800e55ff1 SegmentId: 2d5a3bed67207c8f Sampled: true 
