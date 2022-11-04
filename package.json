@@ -6,7 +6,7 @@
   "scripts": {
     "preview": "marp --preview --watch --output out/ --input-dir slides/",
 		"presentation": "marp --preview --bespoke.progress=true --bespoke.osc=true --output out/ --input-dir slides/",
-		"export:pdf": "marp --pdf --output out/ --input-dir slides/",
+		"export:pdf": "marp --pdf --output pdf/ --input-dir slides/ --allow-local-files",
 		"export:notes": "marp --notes --output out/ --input-dir slides/"
   },
   "author": "",
