@@ -154,7 +154,8 @@ having logs in JSON format
     ProvisionedConcurrencyConfig:
       ProvisionedConcurrentExecutions: 20
   ```
-  May get too expensive &rarr; not a good solution for development environment
+  May get too expensive & slows down deployment
+  &rarr; not a good solution for development environment
 
   https://lumigo.io/blog/provisioned-concurrency-the-end-of-cold-starts/
 
@@ -272,6 +273,17 @@ Beware: Segments (lambda, s3, sqs, ...) vs. Subsegments (downstream calls)
 
 ----
 
+## Performance testing
+
+- ~2.500 PGP encrypted files
+- Uploaded at once to source S3 bucket
+
+#### File size distribution
+
+![](../charts/file-sizes.png)
+
+----
+
 ## 1st iteration: Micronaut framework
 
 ![bg right:25% 100%](../img/micronaut.png)
@@ -313,17 +325,6 @@ Cons:
 
 ----
 
-## Performance testing
-
-- ~2.500 PGP encrypted files
-- Uploaded at once to source S3 bucket
-
-#### File size distribution
-
-![](../charts/file-sizes.png)
-
-----
-
 ## Kotlin response time distribution
 
 | Percentile | ms |
@@ -340,7 +341,7 @@ Cons:
 ## 3rd iteration: Back to Java 11
 
 - Is a plain Java application faster in Lambda environment?
-- Is Kotlin more expressive and also faster?
+- Is Kotlin more expressive but also faster?
 
 ----
 
@@ -456,16 +457,16 @@ Uploads even faster with Layers
 
 ----
 
-## Summary
+## Response time summary
 
-| Pct | Kotlin | Java | Graal | Node |
-|-----|---:|---:|---:|---:|
-| P50 | 120  | 130  | 84   | 75   |
-| P95 | 390  | 413  | 286  | 279  |
-| P99 | 4700 | 6800 | 954  | 734  |
-| Max | 5883 | 8328 | 2064 | 2160 |
+| Lang     | P95    | P99   | Max |
+|----------|-------:|------:|----:|
+| Kotlin   | 390    | 4700  | 5883 |
+| Java     | 413    | 6800  | 8328 |
+| GraalVM  | 286    | 954   | 2065 |
+| Node.js  | 279    | 734   | 2160 |
 
-![bg right:48% fit](../charts/response-time.png)
+![bg right:50% fit](../charts/response-time.png)
 
 ----
 
@@ -490,16 +491,42 @@ Number of cold starts
 
 ----
 
+## Results with provisioned concurrency
+
+| Lang  | P50   | P95    | P99   | Max |
+|-----------|------:|-------:|------:|-----:|
+| Kotlin    | 109   | 414    | 1500  | 2460 |
+| Java      | 99    | 360    | 850   | 1599 |
+| GraalVM   | 67    | 260    | 618   | 902 |
+| Node.js   | 67    | 247    | 503   | 894 |
+
+![bg right:49% fit](../charts/provisioned-concurrency.png)
+
+<!--
+
+No hard data on this - RAM usage
+
+- Java & Kotlin cca. 210 MB
+- Node.js 130 MB
+- Graal 80 MB
+
+-->
+
+----
+
 ## Summary
 
 - Keep your Lambda functions small and simple
-- Use Java SDK 2 with targeted configuration
-- Avoid reflection
-- Compile to native image if possible
-- Use Javascript
+- Consider Java if your concern is low latency
+  - easier GraalVM compilation later
+  - Use Java SDK 2 with targeted configuration
+  - Avoid reflection
+- Consider Javascript if not sure (with Node SDK v3)
 
 <!--
 Reflection: slower during startup, complicates native image compilation
+
+https://filia-aleks.medium.com/aws-lambda-battle-2021-performance-comparison-for-all-languages-c1b441005fd1
 -->
 
 ----
